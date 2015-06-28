@@ -1,0 +1,4 @@
+_builds
+native-ios-project/Build
+native-ios-project/NativeXcodeProject.xcodeproj/project.xcworkspace
+native-ios-project/NativeXcodeProject.xcodeproj/xcuserdata

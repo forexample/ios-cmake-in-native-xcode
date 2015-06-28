@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F04AF531B3EF248009ADA92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F04AF521B3EF248009ADA92 /* main.m */; };
+		0F04AF531B3EF248009ADA92 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0F04AF521B3EF248009ADA92 /* main.mm */; };
 		0F04AF561B3EF248009ADA92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F04AF551B3EF248009ADA92 /* AppDelegate.m */; };
 		0F04AF591B3EF248009ADA92 /* NativeXcodeProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0F04AF571B3EF248009ADA92 /* NativeXcodeProject.xcdatamodeld */; };
 		0F04AF5C1B3EF248009ADA92 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F04AF5B1B3EF248009ADA92 /* ViewController.m */; };
@@ -15,6 +15,7 @@
 		0F04AF611B3EF248009ADA92 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F04AF601B3EF248009ADA92 /* Images.xcassets */; };
 		0F04AF641B3EF248009ADA92 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F04AF621B3EF248009ADA92 /* LaunchScreen.xib */; };
 		0F04AF701B3EF248009ADA92 /* NativeXcodeProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F04AF6F1B3EF248009ADA92 /* NativeXcodeProjectTests.m */; };
+		0F2FF5AA1B3FEFCC003390E4 /* libfoo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2FF5A91B3FEF8D003390E4 /* libfoo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,12 +26,19 @@
 			remoteGlobalIDString = 0F04AF4C1B3EF248009ADA92;
 			remoteInfo = NativeXcodeProject;
 		};
+		0F2FF5A81B3FEF8D003390E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0F2FF5A21B3FEF8C003390E4 /* CMakeiOSProject.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 563B7A0BE44249B28CE8D315;
+			remoteInfo = foo;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0F04AF4D1B3EF248009ADA92 /* NativeXcodeProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NativeXcodeProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F04AF511B3EF248009ADA92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0F04AF521B3EF248009ADA92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0F04AF521B3EF248009ADA92 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
 		0F04AF541B3EF248009ADA92 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0F04AF551B3EF248009ADA92 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0F04AF581B3EF248009ADA92 /* NativeXcodeProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NativeXcodeProject.xcdatamodel; sourceTree = "<group>"; };
@@ -42,6 +50,7 @@
 		0F04AF691B3EF248009ADA92 /* NativeXcodeProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NativeXcodeProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F04AF6E1B3EF248009ADA92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F04AF6F1B3EF248009ADA92 /* NativeXcodeProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NativeXcodeProjectTests.m; sourceTree = "<group>"; };
+		0F2FF5A21B3FEF8C003390E4 /* CMakeiOSProject.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CMakeiOSProject.xcodeproj; path = ../_builds/CMakeiOSProject.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F2FF5AA1B3FEFCC003390E4 /* libfoo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +75,7 @@
 		0F04AF441B3EF248009ADA92 = {
 			isa = PBXGroup;
 			children = (
+				0F2FF5A21B3FEF8C003390E4 /* CMakeiOSProject.xcodeproj */,
 				0F04AF4F1B3EF248009ADA92 /* NativeXcodeProject */,
 				0F04AF6C1B3EF248009ADA92 /* NativeXcodeProjectTests */,
 				0F04AF4E1B3EF248009ADA92 /* Products */,
@@ -100,7 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				0F04AF511B3EF248009ADA92 /* Info.plist */,
-				0F04AF521B3EF248009ADA92 /* main.m */,
+				0F04AF521B3EF248009ADA92 /* main.mm */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -120,6 +131,14 @@
 				0F04AF6E1B3EF248009ADA92 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0F2FF5A31B3FEF8C003390E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F2FF5A91B3FEF8D003390E4 /* libfoo.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +208,12 @@
 			mainGroup = 0F04AF441B3EF248009ADA92;
 			productRefGroup = 0F04AF4E1B3EF248009ADA92 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0F2FF5A31B3FEF8C003390E4 /* Products */;
+					ProjectRef = 0F2FF5A21B3FEF8C003390E4 /* CMakeiOSProject.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0F04AF4C1B3EF248009ADA92 /* NativeXcodeProject */,
@@ -196,6 +221,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		0F2FF5A91B3FEF8D003390E4 /* libfoo.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libfoo.a;
+			remoteRef = 0F2FF5A81B3FEF8D003390E4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0F04AF4B1B3EF248009ADA92 /* Resources */ = {
@@ -223,7 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F04AF561B3EF248009ADA92 /* AppDelegate.m in Sources */,
-				0F04AF531B3EF248009ADA92 /* main.m in Sources */,
+				0F04AF531B3EF248009ADA92 /* main.mm in Sources */,
 				0F04AF5C1B3EF248009ADA92 /* ViewController.m in Sources */,
 				0F04AF591B3EF248009ADA92 /* NativeXcodeProject.xcdatamodeld in Sources */,
 			);
@@ -418,6 +453,7 @@
 				0F04AF751B3EF248009ADA92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F04AF761B3EF248009ADA92 /* Build configuration list for PBXNativeTarget "NativeXcodeProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +462,7 @@
 				0F04AF781B3EF248009ADA92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
